@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		865B122E20F3B1470031A4C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B122D20F3B1470031A4C3 /* AppDelegate.swift */; };
+		865B123020F3B1470031A4C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B122F20F3B1470031A4C3 /* ViewController.swift */; };
+		865B123220F3B1490031A4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865B123120F3B1490031A4C3 /* Assets.xcassets */; };
+		865B123520F3B1490031A4C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865B123320F3B1490031A4C3 /* Main.storyboard */; };
 		A34053A21DCF56600081ABF1 /* ic_volume_off_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34053A11DCF56600081ABF1 /* ic_volume_off_3x.png */; };
 		A34053A41DCF56640081ABF1 /* ic_volume_up_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34053A31DCF56640081ABF1 /* ic_volume_up_3x.png */; };
 		A362A1061DCE6D6B00737197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A1051DCE6D6B00737197 /* AppDelegate.swift */; };
@@ -21,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		865B122B20F3B1470031A4C3 /* pusheen.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pusheen.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		865B122D20F3B1470031A4C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		865B122F20F3B1470031A4C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		865B123120F3B1490031A4C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		865B123420F3B1490031A4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		865B123620F3B1490031A4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865B123720F3B1490031A4C3 /* pusheen_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pusheen_app.entitlements; sourceTree = "<group>"; };
 		A34053A11DCF56600081ABF1 /* ic_volume_off_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_volume_off_3x.png; sourceTree = "<group>"; };
 		A34053A31DCF56640081ABF1 /* ic_volume_up_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_volume_up_3x.png; sourceTree = "<group>"; };
 		A362A1021DCE6D6B00737197 /* touchbar_nyancat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchbar_nyancat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		865B122820F3B1470031A4C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A362A0FF1DCE6D6B00737197 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +65,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		865B122C20F3B1470031A4C3 /* pusheen.app */ = {
+			isa = PBXGroup;
+			children = (
+				865B122D20F3B1470031A4C3 /* AppDelegate.swift */,
+				865B122F20F3B1470031A4C3 /* ViewController.swift */,
+				865B123120F3B1490031A4C3 /* Assets.xcassets */,
+				865B123320F3B1490031A4C3 /* Main.storyboard */,
+				865B123620F3B1490031A4C3 /* Info.plist */,
+				865B123720F3B1490031A4C3 /* pusheen_app.entitlements */,
+			);
+			path = pusheen.app;
+			sourceTree = "<group>";
+		};
 		A362A0F91DCE6D6B00737197 = {
 			isa = PBXGroup;
 			children = (
 				A362A1041DCE6D6B00737197 /* touchbar_nyancat */,
+				865B122C20F3B1470031A4C3 /* pusheen.app */,
 				A362A1031DCE6D6B00737197 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A362A1021DCE6D6B00737197 /* touchbar_nyancat.app */,
+				865B122B20F3B1470031A4C3 /* pusheen.app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +134,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		865B122A20F3B1470031A4C3 /* pusheen.app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 865B123820F3B1490031A4C3 /* Build configuration list for PBXNativeTarget "pusheen.app" */;
+			buildPhases = (
+				865B122720F3B1470031A4C3 /* Sources */,
+				865B122820F3B1470031A4C3 /* Frameworks */,
+				865B122920F3B1470031A4C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pusheen.app;
+			productName = pusheen.app;
+			productReference = 865B122B20F3B1470031A4C3 /* pusheen.app.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A362A1011DCE6D6B00737197 /* touchbar_nyancat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A362A1111DCE6D6B00737197 /* Build configuration list for PBXNativeTarget "touchbar_nyancat" */;
@@ -124,10 +174,13 @@
 		A362A0FA1DCE6D6B00737197 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = AVatsaev;
 				TargetAttributes = {
+					865B122A20F3B1470031A4C3 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					A362A1011DCE6D6B00737197 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = CW482378P7;
@@ -137,7 +190,7 @@
 				};
 			};
 			buildConfigurationList = A362A0FD1DCE6D6B00737197 /* Build configuration list for PBXProject "touchbar_nyancat" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -150,11 +203,21 @@
 			projectRoot = "";
 			targets = (
 				A362A1011DCE6D6B00737197 /* touchbar_nyancat */,
+				865B122A20F3B1470031A4C3 /* pusheen.app */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		865B122920F3B1470031A4C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				865B123220F3B1490031A4C3 /* Assets.xcassets in Resources */,
+				865B123520F3B1490031A4C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A362A1001DCE6D6B00737197 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +236,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		865B122720F3B1470031A4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				865B123020F3B1470031A4C3 /* ViewController.swift in Sources */,
+				865B122E20F3B1470031A4C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A362A0FE1DCE6D6B00737197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +258,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		865B123320F3B1490031A4C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				865B123420F3B1490031A4C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		A362A10B1DCE6D6B00737197 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -197,6 +277,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		865B123920F3B1490031A4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = pusheen.app/pusheen_app.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VZDUV57D94;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = pusheen.app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wizardproductions.pusheen-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		865B123A20F3B1490031A4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = pusheen.app/pusheen_app.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VZDUV57D94;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = pusheen.app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wizardproductions.pusheen-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		A362A10F1DCE6D6B00737197 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -206,15 +331,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -237,11 +371,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -255,15 +390,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -280,10 +424,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -320,6 +465,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		865B123820F3B1490031A4C3 /* Build configuration list for PBXNativeTarget "pusheen.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				865B123920F3B1490031A4C3 /* Debug */,
+				865B123A20F3B1490031A4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A362A0FD1DCE6D6B00737197 /* Build configuration list for PBXProject "touchbar_nyancat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
